@@ -1,0 +1,859 @@
+                                                                                            /*  */
+                                                                                            
+                                                                                            @font-face {
+                                                                                                font-family: "Poppins";
+                                                                                                src: url("Poppins/Poppins-Regular.ttf");
+                                                                                            }
+                                                                                            
+                                                                                            * {
+                                                                                                padding: 0;
+                                                                                                margin: 0;
+                                                                                                box-sizing: border-box;
+                                                                                                color: white;
+                                                                                                font-family: "Poppins";
+                                                                                            }
+                                                                                            /*  Header */
+                                                                                            
+                                                                                            * body {
+                                                                                                background-color: black;
+                                                                                                overflow-x: hidden;
+                                                                                            }
+                                                                                            
+                                                                                            #header {
+                                                                                                display: flex;
+                                                                                                align-items: center;
+                                                                                                justify-content: space-between;
+                                                                                                flex-direction: row;
+                                                                                                padding: 20px 60px;
+                                                                                                max-width: 100%;
+                                                                                                max-height: 90px;
+                                                                                                position: sticky;
+                                                                                                background-color: black;
+                                                                                                z-index: 999;
+                                                                                                top: 0;
+                                                                                                left: 0;
+                                                                                            }
+                                                                                            
+                                                                                            .bar {
+                                                                                                display: flex;
+                                                                                                justify-content: center;
+                                                                                                align-items: center;
+                                                                                                position: relative;
+                                                                                                left: 10%;
+                                                                                            }
+                                                                                            
+                                                                                            #header .bar li {
+                                                                                                padding: 5px 0px 0px 0px;
+                                                                                                margin-right: 90px;
+                                                                                                list-style: none;
+                                                                                                position: relative;
+                                                                                            }
+                                                                                            
+                                                                                            #header .bar li a {
+                                                                                                font-size: 22px;
+                                                                                                font-weight: 400;
+                                                                                                text-decoration: none;
+                                                                                                white-space: nowrap;
+                                                                                                transition: 0.3 ease;
+                                                                                            }
+                                                                                            
+                                                                                            #header .bar li button {
+                                                                                                height: 50px;
+                                                                                                width: 180px;
+                                                                                                background-color: #eb664ee8;
+                                                                                                font-weight: 400;
+                                                                                                font-size: 22px;
+                                                                                                border: none;
+                                                                                                border-radius: 4px;
+                                                                                            }
+                                                                                            
+                                                                                            #header .bar li a:hover {
+                                                                                                color: #EB704E;
+                                                                                            }
+                                                                                            
+                                                                                            #header .bar li a:hover::after,
+                                                                                            #header .bar li a.M-1::after {
+                                                                                                content: "";
+                                                                                                height: 2px;
+                                                                                                width: 55px;
+                                                                                                background-color: #EB704E;
+                                                                                                position: absolute;
+                                                                                                left: 0px;
+                                                                                                top: 37px;
+                                                                                            }
+                                                                                            
+                                                                                            .far {
+                                                                                                display: none;
+                                                                                            }
+                                                                                            
+                                                                                            #part-1 {
+                                                                                                display: flex;
+                                                                                                align-items: center;
+                                                                                                width: 100%;
+                                                                                                background-color: black;
+                                                                                                height: 100vh;
+                                                                                                padding: 30px;
+                                                                                                background-size: cover;
+                                                                                            }
+                                                                                            
+                                                                                            #part-1 .ecrit {
+                                                                                                width: 52%;
+                                                                                                background-color: black;
+                                                                                                display: flex;
+                                                                                                flex-direction: column;
+                                                                                                justify-content: center;
+                                                                                                align-items: center;
+                                                                                                font-family: "Poppins";
+                                                                                            }
+                                                                                            
+                                                                                            #part-1 .bac {
+                                                                                                background-size: cover;
+                                                                                                background-repeat: no-repeat;
+                                                                                                background-position: right;
+                                                                                                margin-top: 40vh;
+                                                                                            }
+                                                                                            
+                                                                                            #part-1 .ecrit h2 {
+                                                                                                font-size: 5vw;
+                                                                                                font-family: "Poppins";
+                                                                                            }
+                                                                                            
+                                                                                            #part-1 .ecrit h2 span {
+                                                                                                white-space: nowrap;
+                                                                                            }
+                                                                                            
+                                                                                            #part-1 .ecrit h2 img {
+                                                                                                position: absolute;
+                                                                                                width: auto;
+                                                                                                max-width: 360px;
+                                                                                                left: 4%;
+                                                                                                top: 45%;
+                                                                                                align-items: flex-end;
+                                                                                            }
+                                                                                            
+                                                                                            #part-1 .ecrit p {
+                                                                                                font-size: 16px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-1 .ecrit button {
+                                                                                                width: 150px;
+                                                                                                padding: 10px;
+                                                                                                margin: 10px;
+                                                                                                background-color: #EB704E;
+                                                                                                border: none;
+                                                                                                border-radius: 5px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-1 .ecrit .btn-2 {
+                                                                                                background-color: black;
+                                                                                                color: #EB704E;
+                                                                                                border: 1px solid #EB704E;
+                                                                                                border-radius: 5px;
+                                                                                                -webkit-border-radius: 5px;
+                                                                                                -moz-border-radius: 5px;
+                                                                                                -ms-border-radius: 5px;
+                                                                                                -o-border-radius: 5px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-1 .ecrit .btn-2 i {
+                                                                                                color: #EB704E;
+                                                                                                padding-left: 3px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-2 {
+                                                                                                display: flex;
+                                                                                                width: 100%;
+                                                                                                background-color: #EB704E;
+                                                                                                height: 90vh;
+                                                                                                padding: 30px;
+                                                                                                margin-top: 100px;
+                                                                                                margin-bottom: 100px;
+                                                                                                position: relative;
+                                                                                                flex-wrap: wrap;
+                                                                                            }
+                                                                                            
+                                                                                            #part-2 .bac img {
+                                                                                                position: absolute;
+                                                                                                top: -170px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-2 .ecrit {
+                                                                                                width: 50%;
+                                                                                                position: relative;
+                                                                                                left: 50%;
+                                                                                            }
+                                                                                            
+                                                                                            #part-2 .ecrit h2 {
+                                                                                                font-size: 49px;
+                                                                                                color: white;
+                                                                                                padding: 10px;
+                                                                                                line-height: normal;
+                                                                                                font-family: "Poppins";
+                                                                                            }
+                                                                                            
+                                                                                            #part-2 .ecrit p {
+                                                                                                font-size: 16px;
+                                                                                                padding: 10px 10px 30px 10px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-2 .ecrit button {
+                                                                                                margin-left: 10px;
+                                                                                                margin-top: 50px;
+                                                                                                padding: 10px;
+                                                                                                width: 150px;
+                                                                                                height: 40px;
+                                                                                                border: none;
+                                                                                                color: #EB704E;
+                                                                                                border-radius: 5px;
+                                                                                                -webkit-border-radius: 5px;
+                                                                                                -moz-border-radius: 5px;
+                                                                                                -ms-border-radius: 5px;
+                                                                                                -o-border-radius: 5px;
+                                                                                                font-family: "Poppins";
+                                                                                            }
+                                                                                            
+                                                                                            #part-3 {
+                                                                                                display: flex;
+                                                                                                flex-direction: row;
+                                                                                                justify-content: space-between;
+                                                                                                flex-wrap: wrap;
+                                                                                                height: 60vh;
+                                                                                            }
+                                                                                            
+                                                                                            #part-3 .part-3-child-1 {
+                                                                                                padding: 20px;
+                                                                                                display: flex;
+                                                                                                flex-direction: column;
+                                                                                                width: 30%;
+                                                                                                text-align: center;
+                                                                                                align-items: center;
+                                                                                            }
+                                                                                            
+                                                                                            #part-3 .part-3-child-1 p {
+                                                                                                width: 50%;
+                                                                                                padding-top: 15px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-3 .part-3-child-1 img {
+                                                                                                padding-bottom: 15px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-4 {
+                                                                                                display: flex;
+                                                                                                width: 100%;
+                                                                                                height: 130vh;
+                                                                                                position: relative;
+                                                                                                margin-top: 100px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-4 .part-4-child-0 {
+                                                                                                width: 100%;
+                                                                                                display: flex;
+                                                                                                flex-direction: column;
+                                                                                                padding: 40px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-4 .ecrit {
+                                                                                                padding: 20px 20px 40px 20px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-4 .ecrit h2 {
+                                                                                                font-family: "Poppins";
+                                                                                                font-size: 32px;
+                                                                                                font-weight: 700;
+                                                                                            }
+                                                                                            
+                                                                                            #part-4 .ecrit h2::after {
+                                                                                                content: "";
+                                                                                                height: 2px;
+                                                                                                width: 55px;
+                                                                                                background-color: #EB704E;
+                                                                                                position: absolute;
+                                                                                                left: 62px;
+                                                                                                top: 105px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-4 .part-4-child-0 .part-4-child-2 {
+                                                                                                width: 100%;
+                                                                                                display: flex;
+                                                                                                flex-direction: row;
+                                                                                                padding: 20px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-4 .part-4-child-0 .part-4-child-2 .part-4-child-3 {
+                                                                                                width: 60%;
+                                                                                                display: flex;
+                                                                                                flex-direction: row;
+                                                                                                flex-wrap: wrap;
+                                                                                            }
+                                                                                            
+                                                                                            #part-4 .part-4-child-0 .part-4-child-2 .part-4-child-3 .part-3-child-1 {
+                                                                                                justify-content: center;
+                                                                                            }
+                                                                                            
+                                                                                            .part-4-child-1 img {
+                                                                                                background-color: #EB704E;
+                                                                                                border: none;
+                                                                                                width: 65px;
+                                                                                                padding: 10px;
+                                                                                                height: 60px;
+                                                                                                background-size: cover;
+                                                                                                border-radius: 5px;
+                                                                                                margin-bottom: 15px;
+                                                                                            }
+                                                                                            
+                                                                                            .part-4-child-1 h2 {
+                                                                                                font-family: "Poppins";
+                                                                                                font-size: 22px;
+                                                                                                font-weight: 300px;
+                                                                                            }
+                                                                                            
+                                                                                            .part-4-child-1 p {
+                                                                                                width: 60%;
+                                                                                                font-family: "Poppins";
+                                                                                                font-size: 12px;
+                                                                                                margin-bottom: 15px;
+                                                                                            }
+                                                                                            
+                                                                                            .annimation2 {
+                                                                                                width: 200px;
+                                                                                                height: 400px;
+                                                                                                background: radial-gradient( #EB704E, rgba(194, 194, 194, 0.1) 100%);
+                                                                                            }
+                                                                                            
+                                                                                            #part-5 {
+                                                                                                display: flex;
+                                                                                                flex-direction: row;
+                                                                                            }
+                                                                                            
+                                                                                            .annimation3 {
+                                                                                                width: 48%;
+                                                                                            }
+                                                                                            
+                                                                                            .annimation3 img {
+                                                                                                width: 70%;
+                                                                                                margin: 60px;
+                                                                                                margin-top: 0px;
+                                                                                            }
+                                                                                            
+                                                                                            .texte1 {
+                                                                                                width: 48%;
+                                                                                                padding: 10px;
+                                                                                            }
+                                                                                            
+                                                                                            .texte1 h3 {
+                                                                                                position: relative;
+                                                                                                top: 0;
+                                                                                            }
+                                                                                            
+                                                                                            .texte2 {
+                                                                                                display: flex;
+                                                                                                flex-direction: row;
+                                                                                                padding: 20px 0px;
+                                                                                            }
+                                                                                            
+                                                                                            .texte2 input,
+                                                                                            .teste3 textarea {
+                                                                                                color: white;
+                                                                                                background-color: black;
+                                                                                                border: none;
+                                                                                                border-bottom: 1px solid white;
+                                                                                                margin-right: 80px;
+                                                                                                padding: 20px 0px;
+                                                                                                align-items: flex-start;
+                                                                                                font-family: "Poppins";
+                                                                                            }
+                                                                                            
+                                                                                            .teste3 textarea {
+                                                                                                width: 500px;
+                                                                                                padding: 20px 0px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-5 button {
+                                                                                                padding: 10px;
+                                                                                                color: white;
+                                                                                                background-color: #EB704E;
+                                                                                                width: 500px;
+                                                                                                border: none;
+                                                                                                border-radius: 5px;
+                                                                                                -webkit-border-radius: 5px;
+                                                                                                -moz-border-radius: 5px;
+                                                                                                -ms-border-radius: 5px;
+                                                                                                -o-border-radius: 5px;
+                                                                                                font-size: 16px;
+                                                                                                height: 50px;
+                                                                                                margin-top: 20px;
+                                                                                            }
+                                                                                            
+                                                                                            #part-6 {
+                                                                                                background-color: #282727;
+                                                                                                height: 60px;
+                                                                                            }
+                                                                                            
+                                                                                            footer {}
+                                                                                            
+                                                                                            footer .texte4 {
+                                                                                                display: flex;
+                                                                                                flex-direction: row;
+                                                                                                margin-top: 20px;
+                                                                                            }
+                                                                                            
+                                                                                            .texte4 h2 {
+                                                                                                margin-left: 40px;
+                                                                                                margin-right: 180px;
+                                                                                            }
+                                                                                            
+                                                                                            .texte4 p {
+                                                                                                margin-right: 40px;
+                                                                                                margin-left: 70px;
+                                                                                                margin-top: 10px;
+                                                                                            }
+                                                                                            
+                                                                                            .texte4 h2:hover,
+                                                                                            .texte4 p:hover {
+                                                                                                color: #EB704E;
+                                                                                            }
+                                                                                            
+                                                                                            .teste5 {
+                                                                                                display: flex;
+                                                                                                flex-direction: row;
+                                                                                                margin: 40px;
+                                                                                                justify-content: space-between;
+                                                                                            }
+                                                                                            
+                                                                                            .conctact,
+                                                                                            .utile {
+                                                                                                margin-top: 40px;
+                                                                                            }
+                                                                                            
+                                                                                            .teste5 p {
+                                                                                                color: #282727;
+                                                                                            }
+                                                                                            
+                                                                                            .tt {
+                                                                                                margin: 40px;
+                                                                                            }
+                                                                                            
+                                                                                            .mobile {
+                                                                                                display: none;
+                                                                                            }
+                                                                                            /* Animation */
+                                                                                            
+                                                                                            .btn {
+                                                                                                margin-top: 40px;
+                                                                                            }
+                                                                                            
+                                                                                            .btn-1 {
+                                                                                                box-shadow: 0 0 60px -10px #eb704e8c;
+                                                                                                color: #fff;
+                                                                                                transform-style: preserve-3d;
+                                                                                                transform: perspective(1000px);
+                                                                                                cursor: pointer;
+                                                                                            }
+                                                                                            
+                                                                                            .btn-1:hover {
+                                                                                                box-shadow: 0 0 60px -5px #eb704ece;
+                                                                                            }
+                                                                                            
+                                                                                             :root {
+                                                                                                --clr-neon: #EB704E;
+                                                                                                --clr-bg: #fff;
+                                                                                            }
+                                                                                            
+                                                                                            .neon-button {
+                                                                                                font-size: 4rem;
+                                                                                                display: inline-block;
+                                                                                                cursor: pointer;
+                                                                                                text-decoration: none;
+                                                                                                color: var(--clr-neon);
+                                                                                                border: var(--clr-neon) 0.125em solid;
+                                                                                                padding: 0.25em 1em;
+                                                                                                border-radius: 0.25em;
+                                                                                                text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+                                                                                                box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+                                                                                                position: relative;
+                                                                                                color: white;
+                                                                                            }
+                                                                                            
+                                                                                            .neon-button::before {
+                                                                                                pointer-events: none;
+                                                                                                content: "";
+                                                                                                position: absolute;
+                                                                                                background: var(--clr-neon);
+                                                                                                top: 120%;
+                                                                                                left: 0;
+                                                                                                width: 100%;
+                                                                                                height: 100%;
+                                                                                                transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+                                                                                                filter: blur(1em);
+                                                                                                opacity: 0.7;
+                                                                                                -webkit-transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+                                                                                                -moz-transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+                                                                                                -ms-transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+                                                                                                -o-transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+                                                                                            }
+                                                                                            
+                                                                                            .neon-button::after {
+                                                                                                content: "";
+                                                                                                position: absolute;
+                                                                                                top: 0;
+                                                                                                bottom: 0;
+                                                                                                left: 0;
+                                                                                                right: 0;
+                                                                                                box-shadow: 0 0 2em 0.5em var(--clr-neon);
+                                                                                                opacity: 0;
+                                                                                                background-color: var(--clr-neon);
+                                                                                                z-index: -1;
+                                                                                                transition: opacity 100ms linear;
+                                                                                                -webkit-transition: opacity 100ms linear;
+                                                                                                -moz-transition: opacity 100ms linear;
+                                                                                                -ms-transition: opacity 100ms linear;
+                                                                                                -o-transition: opacity 100ms linear;
+                                                                                            }
+                                                                                            
+                                                                                            .neon-button:hover,
+                                                                                            .neon-button:focus {
+                                                                                                color: var(--clr-bg);
+                                                                                                text-shadow: none;
+                                                                                            }
+                                                                                            
+                                                                                            .neon-button:hover::before,
+                                                                                            .neon-button:focus::before {
+                                                                                                opacity: 1;
+                                                                                            }
+                                                                                            
+                                                                                            .neon-button:hover::after,
+                                                                                            .neon-button:focus::after {
+                                                                                                opacity: 1;
+                                                                                            }
+                                                                                            
+                                                                                            .animXdrink {
+                                                                                                width: 100%;
+                                                                                                display: flex;
+                                                                                                justify-content: center;
+                                                                                                align-items: center;
+                                                                                            }
+                                                                                            
+                                                                                            h1 {
+                                                                                                position: absolute;
+                                                                                                transform: translateY(-50%);
+                                                                                                -webkit-transform: translateY(-50%);
+                                                                                                -moz-transform: translateY(-50%);
+                                                                                                -ms-transform: translateY(-50%);
+                                                                                                -o-transform: translateY(-50%);
+                                                                                                width: 100%;
+                                                                                                text-align: center;
+                                                                                                color: #ddd;
+                                                                                                font-size: 20px;
+                                                                                                font-family: "Poppins";
+                                                                                            }
+                                                                                            
+                                                                                            .mots-1,
+                                                                                            .mots-2,
+                                                                                            .mots-3,
+                                                                                            .mots-4,
+                                                                                            .mots-5,
+                                                                                            .mots-6 {
+                                                                                                margin-left: 10px;
+                                                                                            }
+                                                                                            
+                                                                                            h1 span {
+                                                                                                display: inline-block;
+                                                                                                animation: animate 1s linear infinite;
+                                                                                                -webkit-animation: animate 1s linear infinite;
+                                                                                            }
+                                                                                            
+                                                                                            @keyframes animate {
+                                                                                                0% {
+                                                                                                    opacity: 0;
+                                                                                                    transform: rotateY(90deg);
+                                                                                                    filter: blur(10px);
+                                                                                                    -webkit-filter: blur(10px);
+                                                                                                }
+                                                                                                100% {
+                                                                                                    opacity: 1;
+                                                                                                    transform: rotateY(90deg);
+                                                                                                }
+                                                                                            }
+                                                                                            
+                                                                                            .mobile {
+                                                                                                display: none;
+                                                                                            }
+                                                                                            
+                                                                                            .mobile-img {
+                                                                                                display: none;
+                                                                                            }
+                                                                                            
+                                                                                            .texte4-mobile {
+                                                                                                display: none;
+                                                                                            }
+                                                                                            /* Responsivité */
+                                                                                            
+                                                                                            @media screen and (max-width:990px) {
+                                                                                                .mobile {
+                                                                                                    display: none;
+                                                                                                }
+                                                                                                .far {
+                                                                                                    display: none;
+                                                                                                }
+                                                                                                .pc .bar {
+                                                                                                    display: flex;
+                                                                                                    justify-content: center;
+                                                                                                    align-items: center;
+                                                                                                    position: relative;
+                                                                                                    left: 10%;
+                                                                                                }
+                                                                                                #header .pc .bar li {
+                                                                                                    margin-right: 53px;
+                                                                                                }
+                                                                                                #header .pc .bar li a {
+                                                                                                    font-size: 16px;
+                                                                                                    font-weight: 300;
+                                                                                                    text-decoration: none;
+                                                                                                    white-space: nowrap;
+                                                                                                }
+                                                                                                #header .pc .bar li button {
+                                                                                                    height: 40px;
+                                                                                                    width: 140px;
+                                                                                                    background-color: #eb664ee8;
+                                                                                                    font-weight: 200;
+                                                                                                    font-size: 16px;
+                                                                                                }
+                                                                                                #header .bar li a:hover::after,
+                                                                                                #header .bar li a.M-1::after {
+                                                                                                    width: 35px;
+                                                                                                    top: 30px;
+                                                                                                }
+                                                                                                #header img {
+                                                                                                    width: 12vw;
+                                                                                                }
+                                                                                                #part-1 .ecrit h2 img {
+                                                                                                    position: absolute;
+                                                                                                    width: auto;
+                                                                                                    max-width: 250px;
+                                                                                                    left: 8%;
+                                                                                                    top: 43%;
+                                                                                                    align-items: flex-end;
+                                                                                                }
+                                                                                                #part-4 {
+                                                                                                    height: 300vh;
+                                                                                                }
+                                                                                                .annimation2 {
+                                                                                                    margin: 30px 0px;
+                                                                                                    position: relative;
+                                                                                                    top: 18%;
+                                                                                                    left: 0%;
+                                                                                                }
+                                                                                                .annimation3 img {
+                                                                                                    margin: 60px;
+                                                                                                    margin-top: 15px;
+                                                                                                    width: 70%;
+                                                                                                }
+                                                                                                #part-5 button,
+                                                                                                .teste3 textarea {
+                                                                                                    width: 350px;
+                                                                                                }
+                                                                                            }
+                                                                                            
+                                                                                            @media screen and (max-width:800px) {
+                                                                                                #header {
+                                                                                                    justify-content: space-between;
+                                                                                                }
+                                                                                                .mobile {
+                                                                                                    display: block;
+                                                                                                }
+                                                                                                .far {
+                                                                                                    display: block;
+                                                                                                }
+                                                                                                .bar {
+                                                                                                    display: flex;
+                                                                                                    flex-direction: column;
+                                                                                                    margin: 100px auto auto auto;
+                                                                                                    background-color: black;
+                                                                                                    height: 100%;
+                                                                                                    width: 300px;
+                                                                                                    margin-right: 0px;
+                                                                                                }
+                                                                                                .bar li {
+                                                                                                    align-items: flex-start;
+                                                                                                    margin-bottom: 10px;
+                                                                                                }
+                                                                                                .bar li button {
+                                                                                                    box-shadow: 10px 10px 50px rgba(14, 127, 6, 0.06);
+                                                                                                }
+                                                                                                .pc {
+                                                                                                    height: 200vh;
+                                                                                                    position: absolute;
+                                                                                                    right: -100%;
+                                                                                                }
+                                                                                                .actives {
+                                                                                                    right: 0%;
+                                                                                                }
+                                                                                                .mobile button {
+                                                                                                    width: 150px;
+                                                                                                    height: 40px;
+                                                                                                    border-radius: 8px;
+                                                                                                    background-color: #EB704E;
+                                                                                                    margin-right: 10px;
+                                                                                                    margin-top: 10px;
+                                                                                                    padding: 10px;
+                                                                                                    cursor: pointer;
+                                                                                                }
+                                                                                                .mobile button:hover {
+                                                                                                    background-color: #EB704E;
+                                                                                                    box-shadow: 0 0 60px -5px #eb704ece;
+                                                                                                }
+                                                                                                .mobile i {
+                                                                                                    cursor: pointer;
+                                                                                                }
+                                                                                                #part-1 {
+                                                                                                    display: flex;
+                                                                                                    flex-direction: column;
+                                                                                                    width: 100%;
+                                                                                                    background-color: black;
+                                                                                                    height: auto;
+                                                                                                    padding: 30px;
+                                                                                                    margin-bottom: 0px;
+                                                                                                }
+                                                                                                #part-1 .ecrit {
+                                                                                                    width: 100%;
+                                                                                                }
+                                                                                                #part-1 .ecrit img {
+                                                                                                    display: none;
+                                                                                                }
+                                                                                                #part-1 .bac {
+                                                                                                    width: 100%;
+                                                                                                    margin-top: 20px;
+                                                                                                }
+                                                                                                #part-2 {
+                                                                                                    display: flex;
+                                                                                                    flex-direction: column;
+                                                                                                    background-color: black;
+                                                                                                    flex-wrap: wrap;
+                                                                                                    width: 100%;
+                                                                                                    height: auto;
+                                                                                                    padding: 0px;
+                                                                                                    margin-bottom: 100px;
+                                                                                                    margin-top: 0px;
+                                                                                                }
+                                                                                                #part-2 .bac img {
+                                                                                                    position: relative;
+                                                                                                    background-color: black;
+                                                                                                    top: 0px;
+                                                                                                    margin-bottom: 100px;
+                                                                                                }
+                                                                                                #part-2 .ecrit {
+                                                                                                    background-color: #EB704E;
+                                                                                                    width: 100%;
+                                                                                                    left: 0%;
+                                                                                                    padding: 30px;
+                                                                                                }
+                                                                                                #part-2 .ecrit h2,
+                                                                                                #part-2 .ecrit p {
+                                                                                                    font-size: 2vh;
+                                                                                                    font-weight: 300;
+                                                                                                }
+                                                                                                .mobile-img {
+                                                                                                    display: block;
+                                                                                                }
+                                                                                                #part-3 {
+                                                                                                    display: flex;
+                                                                                                    flex-direction: column;
+                                                                                                    justify-content: center;
+                                                                                                    align-items: center;
+                                                                                                    height: auto;
+                                                                                                }
+                                                                                                #part-3 .part-3-child-1 {
+                                                                                                    padding: 20px;
+                                                                                                    display: flex;
+                                                                                                    flex-direction: column;
+                                                                                                    width: 100%;
+                                                                                                    text-align: center;
+                                                                                                    align-items: center;
+                                                                                                }
+                                                                                                #part-4 {
+                                                                                                    height: 250vh;
+                                                                                                }
+                                                                                                #part-4 .part-4-child-2 {
+                                                                                                    display: flex;
+                                                                                                    flex-direction: column;
+                                                                                                    height: auto;
+                                                                                                }
+                                                                                                #part-4 .part-4-child-2 .part-4-child-3 {
+                                                                                                    width: 100%;
+                                                                                                    flex-wrap: nowrap;
+                                                                                                }
+                                                                                                .part-4-child-1 {
+                                                                                                    width: 100%;
+                                                                                                }
+                                                                                                .annimation2 {
+                                                                                                    margin: 30px 0px;
+                                                                                                    position: relative;
+                                                                                                    top: 100%;
+                                                                                                    left: -61.2%;
+                                                                                                }
+                                                                                                .part-4-child-1 p {
+                                                                                                    white-space: nowrap;
+                                                                                                }
+                                                                                                #part-5 {
+                                                                                                    display: flex;
+                                                                                                    flex-direction: column;
+                                                                                                }
+                                                                                                #part-5 .annimation3,
+                                                                                                #part-5 .texte1 {
+                                                                                                    margin: 50px;
+                                                                                                }
+                                                                                                footer .texte4 {
+                                                                                                    display: none;
+                                                                                                }
+                                                                                                footer .texte4-mobile {
+                                                                                                    display: block;
+                                                                                                    margin-top: 20px;
+                                                                                                }
+                                                                                                footer .col {
+                                                                                                    display: flex;
+                                                                                                    flex-direction: row;
+                                                                                                }
+                                                                                                .texte4-mobile h2 {
+                                                                                                    font-size: 2vh;
+                                                                                                    margin-left: 20px;
+                                                                                                    margin-right: 0px;
+                                                                                                    width: 60%;
+                                                                                                }
+                                                                                                .texte4-mobile i {
+                                                                                                    margin-right: 30px;
+                                                                                                    margin-left: 10px;
+                                                                                                }
+                                                                                                .texte4-mobile h2:hover,
+                                                                                                .texte4-mobile i:hover {
+                                                                                                    color: #EB704E;
+                                                                                                }
+                                                                                                .annimation3 {
+                                                                                                    width: 70%;
+                                                                                                }
+                                                                                                .annimation3 img {
+                                                                                                    width: 100%;
+                                                                                                    margin-left: 10px;
+                                                                                                }
+                                                                                                .texte1 {
+                                                                                                    width: 100%;
+                                                                                                }
+                                                                                                .texte1 h2,
+                                                                                                .texte1 p {
+                                                                                                    font-size: 3vh;
+                                                                                                    font-weight: 400;
+                                                                                                }
+                                                                                                .teste3 textarea {
+                                                                                                    width: 407px;
+                                                                                                    padding: 20px 0px;
+                                                                                                }
+                                                                                                #part-5 button {
+                                                                                                    width: 407px;
+                                                                                                }
+                                                                                                .pc-img {
+                                                                                                    display: none;
+                                                                                                }
+                                                                                                .texte1 p {
+                                                                                                    width: 70%;
+                                                                                                }
+                                                                                            }
